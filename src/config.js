@@ -5,45 +5,39 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "";
+const description = "TipsyTiger Club is a collection of 8000 randomly generated and stylistically curated NFTs that exist on the Ethereum Blockchain. TipsyTiger holders can participate in exclusive events such as worldwide parties, profit-sharing, community giveaways, and more. Visit https://www.tipsytigerclub.com/ to learn more";
+const baseUri = "ipfs://QmPhcHUK9xDN595778toqSFqmQ4ZsR7UnpypwLDpUHB1jc";
 
-const solanaMetadata = {
-  symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
-  creators: [
-    {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
-    },
-  ],
+const solanaMetadata = {  
 };
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 7995,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "BACKGROUND" },
+      { name: "SKIN" },
+      { name: "CLOTHES" },
+      { name: "NECKLACE" },
+      { name: "MOUTH" },
+      { name: "EYES" },
+      { name: "HAT" },
+      
     ],
+
   },
 ];
+// earring before mouth
 
 const shuffleLayerConfigurations = false;
 
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1000,
+  height: 1000,
   smoothing: false,
 };
 
@@ -73,7 +67,7 @@ const pixelFormat = {
 
 const background = {
   generate: true,
-  brightness: "80%",
+  brightness: "100%",
   static: false,
   default: "#000000",
 };
